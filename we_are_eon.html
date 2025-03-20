@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we.are.eon - Empowering Artists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+        }
+        .hero {
+            background: linear-gradient(to right, #ff00ff, #ffeb3b);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 300px;
+            background: url('eon-logo.png') no-repeat center;
+            background-size: contain;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ffeb3b;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #fff;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+        .cta-button {
+            background-color: transparent;
+            color: #fff;
+            padding: 15px 30px;
+            border: 2px solid #ffeb3b;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-shadow: 0 0 5px #ff00ff;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff00ff;
+            border-color: #ff00ff;
+            text-shadow: 0 0 10px #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>we.are.eon</h1>
+        <p>Empowering artists to create without limits</p>
+        <a href="https://forms.gle/8wJS1i9U2oRwFSgZ6" class="cta-button" target="_blank">Join Now</a>
+    </div>
+</body>
+</html>
